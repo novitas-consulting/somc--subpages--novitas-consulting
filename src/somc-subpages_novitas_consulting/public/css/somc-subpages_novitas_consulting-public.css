@@ -1,0 +1,229 @@
+/**
+ * CSS for the public-facing functionality of the Somc Sub Pages Plugin
+ *
+ */
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700);
+@import url(https://fonts.googleapis.com/css?family=Archivo+Narrow);
+
+/* Styling for the sort button */
+
+.btn-container{
+    margin-top: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.btn-container #subpages-order-btn{
+    transition: background-color 0.25s linear 0s, border-color 0.25s linear 0s, opacity 0.25s linear 0s, color 0.25s linear 0s, fill 0.25s linear 0s;
+    background-color: #5887f5;
+    font-size: 0.6875em;
+    line-height: 0.99;
+    padding: 9px 14px 11px;
+    text-transform: none;
+    font-weight: normal;
+    float: right;
+    font-family: 'Archivo Narrow', sans-serif;
+    min-width: 150px;
+}
+
+#subpages-order-btn:hover, #subpages-order-btn:active, #subpages-order-btn:focus, #subpages-order-btn:visited {
+    background-color: #4572ed;
+}
+
+
+/* Styling for the collapsible list */
+
+#list-subpages {
+    margin: 0 auto;
+    min-width: 210px;
+}
+
+#list-subpages a{
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+#list-subpages a{
+    font-size: 1.625em;
+    letter-spacing: -0.025em;
+    line-height: 1.27273;
+    border-bottom: 0px !important;
+}
+
+#list-subpages .parent-row a{
+    font-size: 20px;
+    letter-spacing: -0.025em;
+    line-height: 42px;
+}
+
+#list-subpages .child-row img{
+    width: 32px;
+}
+
+#list-subpages .child-row a{
+    font-size: 16px;
+    letter-spacing: -0.025em;
+    line-height: 1.27273;
+}
+
+#list-subpages li{
+    list-style-type: none;
+    clear: both;
+    min-height: 35px;
+}
+
+.col-left{
+    width: 44px;
+    float: left;
+    margin-left: 5px;
+}
+
+.col-right{
+    width: 70%;
+    float: left;
+    margin-left: 10px;
+}
+
+.col{
+    min-height: 1px;
+    position: relative;
+}
+
+.row{
+    /*box-shadow: 0 1px 0 0 #dee2e6;*/
+
+}
+
+#list-subpages .parent-list{
+    margin-bottom: 7px;
+}
+
+.parent-row{
+    background-color:#F0F4F8;
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#F0F4F8, endColorstr=#F2F5FA);
+    background-image:-moz-linear-gradient(right, #F0F4F8 13%, #F2F5FA 50%,#E8E8E8 100%);
+    background-image:linear-gradient(right, #F0F4F8 13%, #F2F5FA 50%,#E8E8E8 100%);
+    background-image:-webkit-linear-gradient(right, #F0F4F8 13%, #F2F5FA 50%,#E8E8E8 100%);
+    background-image:-o-linear-gradient(right, #F0F4F8 13%, #F2F5FA 50%,#E8E8E8 100%);
+    background-image:-ms-linear-gradient(right, #F0F4F8 13%, #F2F5FA 50%,#E8E8E8 100%);
+    background-image:-webkit-gradient(linear, right bottom, left bottom, color-stop(13%,#F0F4F8), color-stop(50%,#F2F5FA),color-stop(100%,#E8E8E8));
+    min-height: 60px;
+    padding: 8px 3px;
+}
+
+.parent-row:hover{
+    /*box-shadow: 0 3px 5px rgba(77, 77, 77, 0.28);*/
+}
+
+.child-row{
+    background-color: #E8E8E8;
+    min-height: 43px;
+    margin-top: 7px;
+    line-height: 26px;
+    padding: 6px 1px;
+    margin-left: 34px;
+    box-shadow: -4px 3px 5px rgba(77, 77, 77, 0.28);
+}
+
+.parent-row .col-left{
+    background-color: white;
+    height: 44px;
+}
+
+.parent-list ul{
+    padding-bottom: 40px;
+}
+
+.child-row .col-left{
+    background-color: white;
+    height: 32px;
+    width: 32px;
+}
+
+.open-arrow{
+    background-image: url("images/arrow-down.png");
+    background-repeat: no-repeat;
+    height: 45px;
+    float: right;
+    width: 45px;
+    background-color: white;
+    box-shadow: 0 1px 0 0 #dee2e6;
+}
+
+.close-arrow{
+    background-image: url("images/arrow-up.png");
+    background-repeat: no-repeat;
+    height: 45px;
+    float: right;
+    width: 45px;
+    background-color: #E8E8E8;
+}
+
+.expand{
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.arrow-up {
+    border-bottom: 14px solid #E8E8E8;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    float: left;
+    height: 0;
+    left: 50%;
+    position: relative;
+    top: 0;
+    width: 0;
+}
+
+/* Styling for the sub pages sidebar widget */
+
+.subpages-sidebar .side-parent-ul {
+    margin: 0 auto;
+}
+
+.subpages-sidebar li{
+    border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+}
+
+.side-child-ul li:last-child {
+    border-bottom: 0px;
+}
+
+.subpages-sidebar li{
+    list-style-type: none;
+}
+
+.subpages-sidebar a {
+    font-size: 16px;
+    display: block;
+    padding: 0.8em 0;
+    text-decoration: none;
+}
+
+/* Responsive */
+
+
+/* Mobile */
+@media only screen and (max-width: 480px){
+    #list-subpages .parent-row a{
+        font-size: 14px !important;
+        font-weight: bold;
+    }
+
+    #list-subpages .col-left{
+        display: none;
+    }
+
+    #list-subpages .child-row {
+        line-height: 26px;
+        min-height: 39px;
+    }
+    #list-subpages .child-row a{
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+
